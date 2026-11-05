@@ -1,0 +1,16 @@
+Abt-Buy: train=1722 (pos 186) valid=1916 test=1916 (pos 206)
+TF-IDF baseline: {'threshold': 0.4799999999999999, 'precision': 0.601593625498008, 'recall': 0.7330097087378641, 'f1': 0.6608315098468271}
+ep0 step0 loss 0.6626 t=7s
+ep0 step20 loss 0.6367 t=132s
+ep0 step40 loss 0.7539 t=255s
+ep0 step60 loss 0.5260 t=317s
+ep0 step80 loss 0.7103 t=374s
+ep0 step100 loss 0.6703 t=519s
+epoch 0 valid F1 0.2542 t=776s
+ep1 step0 loss 0.4562 t=949s
+ep1 step20 loss 0.6808 t=1114s
+ep1 step40 loss 0.6316 t=1288s
+ep1 step60 loss 0.4754 t=1438s
+ep1 step80 loss 0.3955 t=1520s
+ep1 step100 loss 0.7557 t=1667s
+epoch 1 valid F1 0.3106 t=1909s

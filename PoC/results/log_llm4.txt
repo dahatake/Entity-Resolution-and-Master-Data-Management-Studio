@@ -1,0 +1,22 @@
+0 0 s
+25 7 s
+50 13 s
+75 19 s
+{
+  "dataset": "Abt-Buy",
+  "model": "google/gemma-4-e4b",
+  "n": 90,
+  "positives_in_sample": 30,
+  "shots": 6,
+  "prompt": "A",
+  "unparseable": 0,
+  "seconds": 149,
+  "llm": {
+    "precision": 0.9629629629629629,
+    "recall": 0.8666666666666667,
+    "f1": 0.9122807017543859
+  },
+  "tfidf_same_subset": {
+    "f1": 0.6792452830188679
+  }
+}

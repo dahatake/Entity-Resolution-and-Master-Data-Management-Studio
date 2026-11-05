@@ -1,0 +1,46 @@
+{
+  "DBLP-ACM": {
+    "pool_left": 1261,
+    "pool_right": 1208,
+    "tfidf_char_ngram": {
+      "recall@1": 0.9977477477477478,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "n_left_with_match": 444
+    },
+    "nomic_embed": {
+      "recall@1": 0.9954954954954955,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "n_left_with_match": 444
+    },
+    "tfidf+embed(score\u5e73\u5747)": {
+      "recall@1": 0.9977477477477478,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "n_left_with_match": 444
+    }
+  },
+  "Abt-Buy": {
+    "pool_left": 737,
+    "pool_right": 695,
+    "tfidf_char_ngram": {
+      "recall@1": 0.9029126213592233,
+      "recall@5": 0.9805825242718447,
+      "recall@10": 0.9951456310679612,
+      "n_left_with_match": 206
+    },
+    "nomic_embed": {
+      "recall@1": 0.7864077669902912,
+      "recall@5": 0.9563106796116505,
+      "recall@10": 0.9805825242718447,
+      "n_left_with_match": 206
+    },
+    "tfidf+embed(score\u5e73\u5747)": {
+      "recall@1": 0.9029126213592233,
+      "recall@5": 0.9854368932038835,
+      "recall@10": 0.9951456310679612,
+      "n_left_with_match": 206
+    }
+  }
+}

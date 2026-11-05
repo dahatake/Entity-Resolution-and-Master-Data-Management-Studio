@@ -1,0 +1,7 @@
+{
+  "records": 1000,
+  "all_pairs": 499500,
+  "true_match_pairs": 2031,
+  "all_negative_accuracy": 0.9959339339339339,
+  "all_negative_recall": 0.0
+}

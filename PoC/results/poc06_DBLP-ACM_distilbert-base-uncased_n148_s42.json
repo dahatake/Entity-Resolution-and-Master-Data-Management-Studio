@@ -1,0 +1,21 @@
+{
+  "dataset": "DBLP-ACM",
+  "model": "distilbert-base-uncased",
+  "train_n": 148,
+  "epochs": 1,
+  "seed": 42,
+  "tfidf_char_cosine": {
+    "threshold": 0.82,
+    "precision": 0.9230769230769231,
+    "recall": 0.8918918918918919,
+    "f1": 0.9072164948453608
+  },
+  "plm_finetuned": {
+    "f1": 0.8673267326732673,
+    "epoch": 0,
+    "test_precision": 0.7815884476534296,
+    "test_recall": 0.9752252252252253,
+    "test_f1": 0.8677354709418837
+  },
+  "train_seconds": 225
+}

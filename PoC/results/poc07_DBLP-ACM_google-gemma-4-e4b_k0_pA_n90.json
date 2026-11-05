@@ -1,0 +1,18 @@
+{
+  "dataset": "DBLP-ACM",
+  "model": "google/gemma-4-e4b",
+  "n": 90,
+  "positives_in_sample": 30,
+  "shots": 0,
+  "prompt": "A",
+  "unparseable": 0,
+  "seconds": 1519,
+  "llm": {
+    "precision": 0.8571428571428571,
+    "recall": 1.0,
+    "f1": 0.9230769230769231
+  },
+  "tfidf_same_subset": {
+    "f1": 0.8666666666666667
+  }
+}

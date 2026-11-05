@@ -1,0 +1,42 @@
+{
+  "leakage_check": {
+    "000": {
+      "pairs": 4500,
+      "positives": 500,
+      "hard_negatives": 3000,
+      "offers_shared_with_train": 0,
+      "pairs_with_both_clusters_seen_in_train": 1.0
+    },
+    "050": {
+      "pairs": 4500,
+      "positives": 500,
+      "hard_negatives": 3000,
+      "offers_shared_with_train": 110,
+      "pairs_with_both_clusters_seen_in_train": 0.37577777777777777
+    },
+    "100": {
+      "pairs": 4500,
+      "positives": 500,
+      "hard_negatives": 3000,
+      "offers_shared_with_train": 0,
+      "pairs_with_both_clusters_seen_in_train": 0.0
+    }
+  },
+  "classical_gbm_trained_on_small(2500 pairs)": {
+    "000": {
+      "precision": 0.3195435092724679,
+      "recall": 0.448,
+      "f1": 0.373022481265612
+    },
+    "050": {
+      "precision": 0.32808398950131235,
+      "recall": 0.5,
+      "f1": 0.39619651347068147
+    },
+    "100": {
+      "precision": 0.31593038821954483,
+      "recall": 0.472,
+      "f1": 0.3785084202085004
+    }
+  }
+}

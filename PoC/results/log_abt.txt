@@ -1,0 +1,31 @@
+Abt-Buy: train=1722 (pos 166) valid=1916 test=1916 (pos 206)
+TF-IDF baseline: {'threshold': 0.4799999999999999, 'precision': 0.5984251968503937, 'recall': 0.7378640776699029, 'f1': 0.6608695652173913}
+ep0 step0 loss 0.6758 t=10s
+ep0 step20 loss 0.7003 t=235s
+ep0 step40 loss 0.6641 t=503s
+epoch 0 valid F1 0.2835 t=847s
+ep1 step0 loss 0.8507 t=1012s
+ep1 step20 loss 0.5362 t=1293s
+ep1 step40 loss 0.5341 t=1473s
+epoch 1 valid F1 0.3044 t=1725s
+{
+  "dataset": "Abt-Buy",
+  "model": "distilbert-base-uncased",
+  "train_n": 1722,
+  "epochs": 2,
+  "seed": 42,
+  "tfidf_char_cosine": {
+    "threshold": 0.4799999999999999,
+    "precision": 0.5984251968503937,
+    "recall": 0.7378640776699029,
+    "f1": 0.6608695652173913
+  },
+  "plm_finetuned": {
+    "f1": 0.3044496487119438,
+    "epoch": 1,
+    "test_precision": 0.18506998444790046,
+    "test_recall": 0.5776699029126213,
+    "test_f1": 0.28032979976442873
+  },
+  "train_seconds": 1889
+}

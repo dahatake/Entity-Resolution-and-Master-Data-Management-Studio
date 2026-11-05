@@ -1,0 +1,51 @@
+{
+  "dataset": "WDC",
+  "model": "distilbert-base-uncased",
+  "train_n": 1000,
+  "epochs": 2,
+  "seed": 42,
+  "tfidf_char_cosine": {
+    "threshold": 0.19999999999999996,
+    "precision": 0.15406976744186046,
+    "recall": 0.9636363636363636,
+    "f1": 0.2656641604010025
+  },
+  "plm_finetuned": {
+    "f1": 0.5169491525423728,
+    "epoch": 1,
+    "test_precision": 0.1897810218978102,
+    "test_recall": 0.9454545454545454,
+    "test_f1": 0.3161094224924012
+  },
+  "extra_tests": {
+    "test_un050": {
+      "n": 600,
+      "positives": 71,
+      "plm_final_epoch": {
+        "precision": 0.2206896551724138,
+        "recall": 0.9014084507042254,
+        "f1": 0.3545706371191136
+      },
+      "tfidf_char_cosine": {
+        "precision": 0.2063953488372093,
+        "recall": 1.0,
+        "f1": 0.3421686746987952
+      }
+    },
+    "test_un100": {
+      "n": 600,
+      "positives": 63,
+      "plm_final_epoch": {
+        "precision": 0.2109375,
+        "recall": 0.8571428571428571,
+        "f1": 0.3385579937304075
+      },
+      "tfidf_char_cosine": {
+        "precision": 0.1783625730994152,
+        "recall": 0.9682539682539683,
+        "f1": 0.3012345679012346
+      }
+    }
+  },
+  "train_seconds": 829
+}

@@ -1,0 +1,9 @@
+splink==5.0.0
+duckdb==2.0.0
+pandas==3.1.0
+rapidfuzz==3.14.6
+pyarrow==26.0.1
+numpy==2.5.4
+scikit-learn==1.9.1
+torch==2.15.0
+transformers==5.21.0

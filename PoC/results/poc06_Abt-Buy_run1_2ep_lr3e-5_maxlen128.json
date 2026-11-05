@@ -1,0 +1,21 @@
+{
+  "dataset": "Abt-Buy",
+  "model": "distilbert-base-uncased",
+  "train_n": 1722,
+  "epochs": 2,
+  "seed": 42,
+  "tfidf_char_cosine": {
+    "threshold": 0.4799999999999999,
+    "precision": 0.5984251968503937,
+    "recall": 0.7378640776699029,
+    "f1": 0.6608695652173913
+  },
+  "plm_finetuned": {
+    "f1": 0.3044496487119438,
+    "epoch": 1,
+    "test_precision": 0.18506998444790046,
+    "test_recall": 0.5776699029126213,
+    "test_f1": 0.28032979976442873
+  },
+  "train_seconds": 1889
+}
