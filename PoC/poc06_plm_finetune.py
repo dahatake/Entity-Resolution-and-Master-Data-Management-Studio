@@ -29,9 +29,12 @@ ap.add_argument("--seed", type=int, default=42)
 ap.add_argument("--threads", type=int, default=16)
 ap.add_argument("--valid_n", type=int, default=600)
 ap.add_argument("--test_n", type=int, default=0)
+ap.add_argument("--tag", default="")
 a = ap.parse_args()
 sys.stdout.reconfigure(encoding="utf-8")
 torch.set_num_threads(a.threads)
+dev = "cuda" if torch.cuda.is_available() else "cpu"
+print("device:", dev, torch.cuda.get_device_name(0) if dev == "cuda" else "", flush=True)
 random.seed(a.seed); np.random.seed(a.seed); torch.manual_seed(a.seed)
 
 
@@ -82,11 +85,11 @@ print("TF-IDF baseline:", res["tfidf_char_cosine"], flush=True)
 
 # ---- PLM微調整(Ditto風シリアライズ: 左 [SEP] 右) ----
 tok = AutoTokenizer.from_pretrained(a.model)
-model = AutoModelForSequenceClassification.from_pretrained(a.model, num_labels=2)
+model = AutoModelForSequenceClassification.from_pretrained(a.model, num_labels=2).to(dev)
 
 
 def enc(L, R):
-    return tok(L, R, truncation=True, max_length=a.max_len, padding="max_length", return_tensors="pt")
+    return tok(L, R, truncation=True, max_length=a.max_len, padding="max_length", return_tensors="pt").to(dev)
 
 
 def predict(L, R, bs=64):
@@ -94,14 +97,16 @@ def predict(L, R, bs=64):
     with torch.no_grad():
         for i in range(0, len(L), bs):
             e = enc(L[i:i + bs], R[i:i + bs])
-            out.append(torch.softmax(model(**e).logits, -1)[:, 1].numpy())
+            with torch.autocast(dev, dtype=torch.bfloat16, enabled=(dev == "cuda")):
+                lg = model(**e).logits
+            out.append(torch.softmax(lg.float(), -1)[:, 1].cpu().numpy())
     return np.concatenate(out)
 
 
 opt = torch.optim.AdamW(model.parameters(), lr=a.lr, weight_decay=0.01)
 steps = a.epochs * ((len(trY) + a.bs - 1) // a.bs)
 sched = torch.optim.lr_scheduler.LambdaLR(opt, lambda s: min(1.0, (s + 1) / (0.1 * steps)) * max(0.0, (steps - s) / steps))
-w = torch.tensor([1.0, float((trY == 0).sum() / max(1, (trY == 1).sum()))]).clamp(max=8.0)
+w = torch.tensor([1.0, float((trY == 0).sum() / max(1, (trY == 1).sum()))]).clamp(max=8.0).to(dev)
 lossf = torch.nn.CrossEntropyLoss(weight=w)
 best = {"f1": -1}
 t0 = time.time()
@@ -111,7 +116,9 @@ for ep in range(a.epochs):
     for bi, i in enumerate(range(0, len(order), a.bs)):
         b = order[i:i + a.bs]
         e = enc([trL[j] for j in b], [trR[j] for j in b])
-        loss = lossf(model(**e).logits, torch.tensor(trY[b]))
+        with torch.autocast(dev, dtype=torch.bfloat16, enabled=(dev == "cuda")):
+            lg = model(**e).logits
+        loss = lossf(lg.float(), torch.tensor(trY[b]).to(dev))
         loss.backward(); torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0)
         opt.step(); sched.step(); opt.zero_grad()
         if bi % 20 == 0:
@@ -137,8 +144,11 @@ for fn in sorted((DATA / a.dataset).glob("test_*.txt")):
 res["extra_tests"] = extras
 res["train_seconds"] = round(time.time() - t0)
 print(json.dumps(res, indent=2, ensure_ascii=False))
-tag = f"{a.dataset}_{a.model.replace('/', '-')}_n{len(trY)}_s{a.seed}"
+res["device"] = dev
+tag = f"{a.dataset}_{a.model.replace('/', '-')}_n{len(trY)}_s{a.seed}{a.tag}"
 (RESULTS / f"poc06_{tag}.json").write_text(json.dumps(res, indent=2, ensure_ascii=False), encoding="utf-8")
+
+
 
 
 

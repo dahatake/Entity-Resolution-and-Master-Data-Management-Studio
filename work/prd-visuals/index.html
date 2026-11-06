@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ER/MDM Studio — PRD データ可視化(参照プロトタイプ)</title>
+<link rel="stylesheet" href="style.css?v=8">
+</head>
+<body>
+<header class="top">
+  <div class="brand">ER/MDM Studio <span>PRD 可視化</span></div>
+  <nav id="nav"></nav>
+</header>
+<main id="main">
+  <section id="hero" class="hero">
+    <div class="hero-text">
+      <div class="kicker">K4 ・ 推移閉包</div>
+      <h1>「1人の顧客に、別人が混ざる」瞬間</h1>
+      <p class="lead">Fellegi–Sunter モデルが付けたリンクの確率を、閾値でつなぎ直すと、クラスタが分裂・結合します。
+        閾値を下げると別人が同じクラスタに入り(赤)、上げると真のリンクが切れます(点線)。
+        ノードの<strong>色は真の同一人物</strong>、囲みの<strong>赤は別人が混ざったクラスタ</strong>です。</p>
+    </div>
+    <div id="hero-fig"></div>
+  </section>
+</main>
+<footer>
+  <p>データは <code>PoC/results/</code> と <code>work/prd.md</code> から <code>PoC/build_prd_visuals.py</code> で生成。
+     合成データ・公開ベンチマークの結果であり、自社データの結果ではありません(PRD 14章)。d3.js v7(ISC)を同梱。</p>
+</footer>
+<script src="vendor/d3.v7.min.js"></script>
+<script src="data.js?v=8"></script>
+<script src="app.js?v=8"></script>
+</body>
+</html>
+
+
+
+
+
+
+

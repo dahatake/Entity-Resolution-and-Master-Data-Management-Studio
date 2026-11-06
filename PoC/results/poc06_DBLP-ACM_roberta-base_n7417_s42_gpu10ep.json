@@ -1,0 +1,23 @@
+{
+  "dataset": "DBLP-ACM",
+  "model": "roberta-base",
+  "train_n": 7417,
+  "epochs": 10,
+  "seed": 42,
+  "tfidf_char_cosine": {
+    "threshold": 0.82,
+    "precision": 0.9236111111111112,
+    "recall": 0.8986486486486487,
+    "f1": 0.910958904109589
+  },
+  "plm_finetuned": {
+    "f1": 0.9921787709497206,
+    "epoch": 8,
+    "test_precision": 0.9756637168141593,
+    "test_recall": 0.9932432432432432,
+    "test_f1": 0.984375
+  },
+  "extra_tests": {},
+  "train_seconds": 472,
+  "device": "cuda"
+}

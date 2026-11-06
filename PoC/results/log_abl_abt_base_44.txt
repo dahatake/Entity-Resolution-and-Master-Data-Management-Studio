@@ -1,0 +1,33 @@
+Loading weights:   0%|          | 0/100 [00:00<?, ?it/s]Loading weights: 100%|██████████| 100/100 [00:00<00:00, 2929.11it/s]
+[transformers] [1mDistilBertForSequenceClassification LOAD REPORT[0m from: distilbert-base-uncased
+Key                     | Status     | 
+------------------------+------------+-
+vocab_transform.bias    | UNEXPECTED | 
+vocab_transform.weight  | UNEXPECTED | 
+vocab_layer_norm.bias   | UNEXPECTED | 
+vocab_layer_norm.weight | UNEXPECTED | 
+vocab_projector.bias    | UNEXPECTED | 
+pre_classifier.weight   | MISSING    | 
+classifier.bias         | MISSING    | 
+pre_classifier.bias     | MISSING    | 
+classifier.weight       | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+epoch 0 valid F1 0.4591 t=18s
+epoch 1 valid F1 0.7352 t=34s
+epoch 2 valid F1 0.8188 t=51s
+epoch 3 valid F1 0.8223 t=67s
+epoch 4 valid F1 0.8053 t=83s
+epoch 5 valid F1 0.8054 t=98s
+epoch 6 valid F1 0.8150 t=113s
+epoch 7 valid F1 0.8206 t=128s
+epoch 8 valid F1 0.8180 t=144s
+epoch 9 valid F1 0.7959 t=158s
+epoch 10 valid F1 0.8010 t=173s
+epoch 11 valid F1 0.8123 t=188s
+epoch 12 valid F1 0.8073 t=204s
+epoch 13 valid F1 0.8114 t=220s
+epoch 14 valid F1 0.8114 t=235s
+{"dataset": "Abt-Buy", "variant": "base", "model": "distilbert-base-uncased", "seed": 44, "epochs": 15, "max_len": 128, "da_op": null, "train_n": 5743, "test_n": 1916, "seconds": 235, "valid_f1": 0.8223350253807107, "epoch": 3, "test_precision": 0.8109452736318408, "test_recall": 0.7912621359223301, "test_f1": 0.800982800982801}

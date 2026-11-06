@@ -1,0 +1,192 @@
+device: cuda NVIDIA RTX Spark N1X (6144-core Blackwell RTX GPU)
+Abt-Buy: train=5743 (pos 616) valid=1916 test=1916 (pos 206)
+TF-IDF baseline: {'threshold': 0.4799999999999999, 'precision': 0.6208333333333333, 'recall': 0.7233009708737864, 'f1': 0.6681614349775785}
+Loading weights:   0%|          | 0/197 [00:00<?, ?it/s]Loading weights: 100%|██████████| 197/197 [00:00<00:00, 2309.72it/s]
+[transformers] [1mRobertaForSequenceClassification LOAD REPORT[0m from: roberta-base
+Key                        | Status     | 
+---------------------------+------------+-
+lm_head.bias               | UNEXPECTED | 
+lm_head.layer_norm.bias    | UNEXPECTED | 
+lm_head.layer_norm.weight  | UNEXPECTED | 
+lm_head.dense.bias         | UNEXPECTED | 
+lm_head.dense.weight       | UNEXPECTED | 
+classifier.dense.weight    | MISSING    | 
+classifier.out_proj.weight | MISSING    | 
+classifier.out_proj.bias   | MISSING    | 
+classifier.dense.bias      | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+ep0 step0 loss 0.6572 t=3s
+ep0 step20 loss 0.6166 t=10s
+ep0 step40 loss 0.6539 t=16s
+ep0 step60 loss 0.6539 t=22s
+ep0 step80 loss 0.6670 t=29s
+ep0 step100 loss 0.8703 t=36s
+ep0 step120 loss 0.5156 t=42s
+ep0 step140 loss 0.3620 t=49s
+ep0 step160 loss 0.2900 t=55s
+epoch 0 valid F1 0.4180 t=66s
+ep1 step0 loss 1.0926 t=71s
+ep1 step20 loss 0.8281 t=77s
+ep1 step40 loss 0.0363 t=83s
+ep1 step60 loss 0.0985 t=89s
+ep1 step80 loss 0.1554 t=95s
+ep1 step100 loss 0.3502 t=101s
+ep1 step120 loss 1.0228 t=108s
+ep1 step140 loss 0.0544 t=114s
+ep1 step160 loss 0.0535 t=121s
+epoch 1 valid F1 0.7673 t=132s
+ep2 step0 loss 0.1554 t=138s
+ep2 step20 loss 0.1119 t=144s
+ep2 step40 loss 0.8173 t=151s
+ep2 step60 loss 0.0036 t=158s
+ep2 step80 loss 0.0243 t=165s
+ep2 step100 loss 0.0030 t=171s
+ep2 step120 loss 0.0071 t=178s
+ep2 step140 loss 1.4630 t=185s
+ep2 step160 loss 0.9423 t=191s
+epoch 2 valid F1 0.8721 t=203s
+ep3 step0 loss 0.6696 t=209s
+ep3 step20 loss 0.0021 t=216s
+ep3 step40 loss 0.2299 t=223s
+ep3 step60 loss 0.0011 t=229s
+ep3 step80 loss 0.0014 t=236s
+ep3 step100 loss 0.0071 t=242s
+ep3 step120 loss 0.5362 t=248s
+ep3 step140 loss 0.1637 t=255s
+ep3 step160 loss 0.0067 t=261s
+epoch 3 valid F1 0.8687 t=272s
+ep4 step0 loss 0.3472 t=272s
+ep4 step20 loss 0.0038 t=279s
+ep4 step40 loss 0.0055 t=286s
+ep4 step60 loss 0.0025 t=293s
+ep4 step80 loss 0.0014 t=299s
+ep4 step100 loss 0.0021 t=306s
+ep4 step120 loss 0.0062 t=312s
+ep4 step140 loss 0.0783 t=319s
+ep4 step160 loss 0.1713 t=326s
+epoch 4 valid F1 0.8310 t=337s
+ep5 step0 loss 0.2070 t=337s
+ep5 step20 loss 0.0006 t=344s
+ep5 step40 loss 0.0004 t=350s
+ep5 step60 loss 0.0097 t=356s
+ep5 step80 loss 0.0017 t=362s
+ep5 step100 loss 0.3982 t=368s
+ep5 step120 loss 0.1297 t=374s
+ep5 step140 loss 0.2262 t=381s
+ep5 step160 loss 0.0017 t=387s
+epoch 5 valid F1 0.8773 t=399s
+ep6 step0 loss 0.0028 t=405s
+ep6 step20 loss 0.0012 t=411s
+ep6 step40 loss 0.0544 t=418s
+ep6 step60 loss 0.0010 t=424s
+ep6 step80 loss 0.0005 t=431s
+ep6 step100 loss 0.0004 t=437s
+ep6 step120 loss 0.0011 t=444s
+ep6 step140 loss 0.0007 t=451s
+ep6 step160 loss 0.0004 t=458s
+epoch 6 valid F1 0.8682 t=470s
+ep7 step0 loss 0.0012 t=470s
+ep7 step20 loss 0.0004 t=477s
+ep7 step40 loss 0.0004 t=484s
+ep7 step60 loss 0.0009 t=491s
+ep7 step80 loss 0.0004 t=498s
+ep7 step100 loss 0.0003 t=504s
+ep7 step120 loss 0.0003 t=511s
+ep7 step140 loss 0.1524 t=518s
+ep7 step160 loss 0.0002 t=524s
+epoch 7 valid F1 0.8667 t=536s
+ep8 step0 loss 0.0012 t=536s
+ep8 step20 loss 0.0008 t=543s
+ep8 step40 loss 0.0003 t=549s
+ep8 step60 loss 0.0003 t=556s
+ep8 step80 loss 0.0005 t=563s
+ep8 step100 loss 0.0005 t=569s
+ep8 step120 loss 0.0985 t=575s
+ep8 step140 loss 0.0003 t=581s
+ep8 step160 loss 0.0002 t=587s
+epoch 8 valid F1 0.8878 t=597s
+ep9 step0 loss 0.0093 t=602s
+ep9 step20 loss 0.0002 t=608s
+ep9 step40 loss 0.0067 t=614s
+ep9 step60 loss 0.0001 t=620s
+ep9 step80 loss 0.0001 t=626s
+ep9 step100 loss 0.0001 t=632s
+ep9 step120 loss 0.0001 t=638s
+ep9 step140 loss 0.0001 t=644s
+ep9 step160 loss 0.7871 t=650s
+epoch 9 valid F1 0.8872 t=660s
+ep10 step0 loss 0.0001 t=661s
+ep10 step20 loss 0.0001 t=667s
+ep10 step40 loss 0.0002 t=672s
+ep10 step60 loss 0.0001 t=679s
+ep10 step80 loss 0.0007 t=684s
+ep10 step100 loss 0.0001 t=690s
+ep10 step120 loss 0.0001 t=696s
+ep10 step140 loss 0.0004 t=702s
+ep10 step160 loss 0.0002 t=708s
+epoch 10 valid F1 0.8814 t=718s
+ep11 step0 loss 0.0465 t=718s
+ep11 step20 loss 0.0001 t=724s
+ep11 step40 loss 0.0254 t=730s
+ep11 step60 loss 0.0029 t=736s
+ep11 step80 loss 0.0045 t=743s
+ep11 step100 loss 0.0002 t=749s
+ep11 step120 loss 0.0001 t=756s
+ep11 step140 loss 0.0001 t=762s
+ep11 step160 loss 0.1295 t=769s
+epoch 11 valid F1 0.8734 t=780s
+ep12 step0 loss 0.0001 t=780s
+ep12 step20 loss 0.0001 t=787s
+ep12 step40 loss 0.0001 t=793s
+ep12 step60 loss 0.0001 t=800s
+ep12 step80 loss 0.0001 t=807s
+ep12 step100 loss 0.0001 t=813s
+ep12 step120 loss 0.0001 t=820s
+ep12 step140 loss 0.0001 t=826s
+ep12 step160 loss 0.0001 t=833s
+epoch 12 valid F1 0.8623 t=844s
+ep13 step0 loss 0.0001 t=844s
+ep13 step20 loss 0.0001 t=851s
+ep13 step40 loss 0.0001 t=857s
+ep13 step60 loss 0.0001 t=864s
+ep13 step80 loss 0.0001 t=870s
+ep13 step100 loss 0.0001 t=877s
+ep13 step120 loss 1.1263 t=884s
+ep13 step140 loss 0.0001 t=891s
+ep13 step160 loss 0.5565 t=897s
+epoch 13 valid F1 0.8724 t=909s
+ep14 step0 loss 0.0001 t=909s
+ep14 step20 loss 0.0004 t=916s
+ep14 step40 loss 0.0001 t=923s
+ep14 step60 loss 0.0001 t=930s
+ep14 step80 loss 0.0001 t=936s
+ep14 step100 loss 0.0001 t=943s
+ep14 step120 loss 0.0002 t=950s
+ep14 step140 loss 0.0001 t=956s
+ep14 step160 loss 0.0001 t=962s
+epoch 14 valid F1 0.8623 t=973s
+{
+  "dataset": "Abt-Buy",
+  "model": "roberta-base",
+  "train_n": 5743,
+  "epochs": 15,
+  "seed": 43,
+  "tfidf_char_cosine": {
+    "threshold": 0.4799999999999999,
+    "precision": 0.6208333333333333,
+    "recall": 0.7233009708737864,
+    "f1": 0.6681614349775785
+  },
+  "plm_finetuned": {
+    "f1": 0.8877551020408163,
+    "epoch": 8,
+    "test_precision": 0.8926829268292683,
+    "test_recall": 0.8883495145631068,
+    "test_f1": 0.8905109489051095
+  },
+  "extra_tests": {},
+  "train_seconds": 973
+}

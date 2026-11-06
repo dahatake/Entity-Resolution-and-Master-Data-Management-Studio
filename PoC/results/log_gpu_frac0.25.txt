@@ -1,0 +1,102 @@
+device: cuda NVIDIA RTX Spark N1X (6144-core Blackwell RTX GPU)
+Abt-Buy: train=1435 (pos 137) valid=1916 test=1916 (pos 206)
+TF-IDF baseline: {'threshold': 0.4799999999999999, 'precision': 0.59375, 'recall': 0.7378640776699029, 'f1': 0.658008658008658}
+Loading weights:   0%|          | 0/197 [00:00<?, ?it/s]Loading weights: 100%|██████████| 197/197 [00:00<00:00, 2793.53it/s]
+[transformers] [1mRobertaForSequenceClassification LOAD REPORT[0m from: roberta-base
+Key                        | Status     | 
+---------------------------+------------+-
+lm_head.layer_norm.weight  | UNEXPECTED | 
+lm_head.layer_norm.bias    | UNEXPECTED | 
+lm_head.dense.weight       | UNEXPECTED | 
+lm_head.bias               | UNEXPECTED | 
+lm_head.dense.bias         | UNEXPECTED | 
+classifier.dense.weight    | MISSING    | 
+classifier.dense.bias      | MISSING    | 
+classifier.out_proj.bias   | MISSING    | 
+classifier.out_proj.weight | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+ep0 step0 loss 0.7191 t=3s
+ep0 step20 loss 0.6259 t=14s
+ep0 step40 loss 0.7415 t=24s
+epoch 0 valid F1 0.0000 t=35s
+ep1 step0 loss 0.7407 t=44s
+ep1 step20 loss 0.7283 t=54s
+ep1 step40 loss 0.6621 t=64s
+epoch 1 valid F1 0.0727 t=74s
+ep2 step0 loss 0.7458 t=83s
+ep2 step20 loss 0.5168 t=94s
+ep2 step40 loss 1.1313 t=105s
+epoch 2 valid F1 0.7042 t=115s
+ep3 step0 loss 0.1165 t=124s
+ep3 step20 loss 0.5957 t=134s
+ep3 step40 loss 0.0190 t=144s
+epoch 3 valid F1 0.7601 t=155s
+ep4 step0 loss 0.1010 t=163s
+ep4 step20 loss 0.0644 t=174s
+ep4 step40 loss 0.0130 t=184s
+epoch 4 valid F1 0.5541 t=194s
+ep5 step0 loss 0.0093 t=195s
+ep5 step20 loss 0.0828 t=205s
+ep5 step40 loss 0.0033 t=215s
+epoch 5 valid F1 0.7981 t=226s
+ep6 step0 loss 0.0047 t=235s
+ep6 step20 loss 0.0046 t=245s
+ep6 step40 loss 0.0641 t=256s
+epoch 6 valid F1 0.7902 t=266s
+ep7 step0 loss 0.0017 t=266s
+ep7 step20 loss 0.6209 t=277s
+ep7 step40 loss 0.0020 t=287s
+epoch 7 valid F1 0.7684 t=297s
+ep8 step0 loss 0.0671 t=298s
+ep8 step20 loss 0.0014 t=308s
+ep8 step40 loss 0.0008 t=319s
+epoch 8 valid F1 0.8064 t=329s
+ep9 step0 loss 0.0008 t=337s
+ep9 step20 loss 0.0004 t=347s
+ep9 step40 loss 0.0008 t=356s
+epoch 9 valid F1 0.7887 t=366s
+ep10 step0 loss 0.0005 t=367s
+ep10 step20 loss 0.0042 t=376s
+ep10 step40 loss 0.0003 t=386s
+epoch 10 valid F1 0.7771 t=396s
+ep11 step0 loss 0.0003 t=396s
+ep11 step20 loss 0.0004 t=406s
+ep11 step40 loss 0.0003 t=417s
+epoch 11 valid F1 0.8076 t=427s
+ep12 step0 loss 0.0003 t=436s
+ep12 step20 loss 0.0002 t=446s
+ep12 step40 loss 0.0002 t=458s
+epoch 12 valid F1 0.7921 t=468s
+ep13 step0 loss 0.0002 t=469s
+ep13 step20 loss 0.0003 t=480s
+ep13 step40 loss 0.0002 t=491s
+epoch 13 valid F1 0.7910 t=502s
+ep14 step0 loss 0.0003 t=503s
+ep14 step20 loss 0.0002 t=514s
+ep14 step40 loss 0.0006 t=524s
+epoch 14 valid F1 0.7910 t=535s
+{
+  "dataset": "Abt-Buy",
+  "model": "roberta-base",
+  "train_n": 1435,
+  "epochs": 15,
+  "seed": 42,
+  "tfidf_char_cosine": {
+    "threshold": 0.4799999999999999,
+    "precision": 0.59375,
+    "recall": 0.7378640776699029,
+    "f1": 0.658008658008658
+  },
+  "plm_finetuned": {
+    "f1": 0.8075880758807588,
+    "epoch": 11,
+    "test_precision": 0.9021739130434783,
+    "test_recall": 0.8058252427184466,
+    "test_f1": 0.8512820512820513
+  },
+  "extra_tests": {},
+  "train_seconds": 535
+}

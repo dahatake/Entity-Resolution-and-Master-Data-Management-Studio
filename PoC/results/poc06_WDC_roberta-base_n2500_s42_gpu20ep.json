@@ -1,0 +1,52 @@
+{
+  "dataset": "WDC",
+  "model": "roberta-base",
+  "train_n": 2500,
+  "epochs": 20,
+  "seed": 42,
+  "tfidf_char_cosine": {
+    "threshold": 0.18,
+    "precision": 0.17897831679529586,
+    "recall": 0.974,
+    "f1": 0.3023905619372866
+  },
+  "plm_finetuned": {
+    "f1": 0.7384615384615385,
+    "epoch": 15,
+    "test_precision": 0.6016806722689075,
+    "test_recall": 0.716,
+    "test_f1": 0.6538812785388128
+  },
+  "extra_tests": {
+    "test_un050": {
+      "n": 4500,
+      "positives": 500,
+      "plm_final_epoch": {
+        "precision": 0.6485436893203883,
+        "recall": 0.668,
+        "f1": 0.6581280788177339
+      },
+      "tfidf_char_cosine": {
+        "precision": 0.18460388639760836,
+        "recall": 0.988,
+        "f1": 0.3110831234256927
+      }
+    },
+    "test_un100": {
+      "n": 4500,
+      "positives": 500,
+      "plm_final_epoch": {
+        "precision": 0.6437847866419295,
+        "recall": 0.694,
+        "f1": 0.6679499518768046
+      },
+      "tfidf_char_cosine": {
+        "precision": 0.1863003387278886,
+        "recall": 0.99,
+        "f1": 0.313588850174216
+      }
+    }
+  },
+  "train_seconds": 373,
+  "device": "cuda"
+}

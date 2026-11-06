@@ -1,0 +1,381 @@
+{
+ "phase": 1,
+ "required": 48,
+ "covered": 43,
+ "uncovered_by_tests": [
+  "FR-VIZ-01",
+  "FR-VIZ-02",
+  "FR-VIZ-03",
+  "NFR-11",
+  "NFR-12"
+ ],
+ "manual_only": [
+  "FR-VIZ-01",
+  "FR-VIZ-02",
+  "FR-VIZ-03",
+  "NFR-11",
+  "NFR-12"
+ ],
+ "rows": [
+  {
+   "id": "FR-ING-01",
+   "tests": [
+    "test_ingest_std.py::test_csv_and_sqlite_sources",
+    "test_ingest_std.py::test_duplicate_or_empty_keys_rejected"
+   ],
+   "manual": null
+  },
+  {
+   "id": "FR-ING-02",
+   "tests": [
+    "test_ingest_std.py::test_idempotent_reload"
+   ],
+   "manual": null
+  },
+  {
+   "id": "FR-ING-03",
+   "tests": [
+    "test_ingest_std.py::test_deletion_propagation",
+    "test_ingest_std.py::test_snapshot_missing_means_deleted"
+   ],
+   "manual": null
+  },
+  {
+   "id": "FR-ING-04",
+   "tests": [
+    "test_ingest_std.py::test_schema_change_blocks_until_acknowledged"
+   ],
+   "manual": null
+  },
+  {
+   "id": "FR-ING-06",
+   "tests": [
+    "test_ingest_std.py::test_mynumber_check_digit",
+    "test_ingest_std.py::test_mynumber_column_is_quarantined",
+    "test_ingest_std.py::test_mynumber_header_and_key_rejected"
+   ],
+   "manual": null
+  },
+  {
+   "id": "FR-STD-01",
+   "tests": [
+    "test_ingest_std.py::test_company_and_address_normalization"
+   ],
+   "manual": null
+  },
+  {
+   "id": "FR-STD-02",
+   "tests": [
+    "test_ingest_std.py::test_variant_dictionary_is_extensible_and_shows_gap"
+   ],
+   "manual": null
+  },
+  {
+   "id": "FR-STD-03",
+   "tests": [
+    "test_ingest_std.py::test_versioning_by_hash",
+    "test_ingest_std.py::test_validation"
+   ],
+   "manual": null
+  },
+  {
+   "id": "FR-BLK-01",
+   "tests": [
+    "test_phase1_remaining.py::test_blocking_union_of_rules"
+   ],
+   "manual": null
+  },
+  {
+   "id": "FR-BLK-02",
+   "tests": [
+    "test_pipeline.py::test_blocking_recall_and_cap"
+   ],
+   "manual": null
+  },
+  {
+   "id": "FR-BLK-05",
+   "tests": [
+    "test_pipeline.py::test_blocking_recall_and_cap"
+   ],
+   "manual": null
+  },
+  {
+   "id": "FR-MAT-01",
+   "tests": [
+    "test_phase1_remaining.py::test_hybrid_deterministic_plus_probabilistic",
+    "test_pipeline.py::test_fs_precision_at_threshold"
+   ],
+   "manual": null
+  },
+  {
+   "id": "FR-MAT-02",
+   "tests": [
+    "test_api.py::test_explain_endpoint",
+    "test_pipeline.py::test_explain_returns_field_contributions"
+   ],
+   "manual": null
+  },
+  {
+   "id": "FR-MAT-04",
+   "tests": [
+    "test_phase1_remaining.py::test_matcher_plugin_and_model_versioning"
+   ],
+   "manual": null
+  },
+  {
+   "id": "FR-CLU-01",
+   "tests": [
+    "test_pipeline.py::test_cluster_metrics_show_transitive_damage",
+    "test_pipeline.py::test_transitive_closure_and_center"
+   ],
+   "manual": null
+  },
+  {
+   "id": "FR-CLU-02",
+   "tests": [
+    "test_phase1_remaining.py::test_impure_clusters_detected"
+   ],
+   "manual": null
+  },
+  {
+   "id": "FR-REV-01",
+   "tests": [
+    "test_phase1_remaining.py::test_three_bands_by_threshold"
+   ],
+   "manual": null
+  },
+  {
+   "id": "FR-REV-02",
+   "tests": [
+    "test_pipeline.py::test_review_queue_estimate"
+   ],
+   "manual": null
+  },
+  {
+   "id": "FR-REV-03",
+   "tests": [
+    "test_pipeline.py::test_review_decision_becomes_constraint"
+   ],
+   "manual": null
+  },
+  {
+   "id": "FR-XRF-01",
+   "tests": [
+    "test_api.py::test_entities_resolve_and_export",
+    "test_phase1_remaining.py::test_xref_does_not_modify_source_data"
+   ],
+   "manual": null
+  },
+  {
+   "id": "FR-XRF-02",
+   "tests": [
+    "test_phase1_remaining.py::test_unmerge_propagates_change_events",
+    "test_pipeline.py::test_manual_unmerge_persists_across_rerun",
+    "test_pipeline.py::test_cannot_link_enforced"
+   ],
+   "manual": null
+  },
+  {
+   "id": "FR-XRF-03",
+   "tests": [
+    "test_api.py::test_entities_resolve_and_export",
+    "test_phase1_remaining.py::test_merge_retires_id_with_successor",
+    "test_pipeline.py::test_global_ids_stable_across_reruns",
+    "test_pipeline.py::test_manual_unmerge_persists_across_rerun"
+   ],
+   "manual": null
+  },
+  {
+   "id": "FR-EVL-01",
+   "tests": [
+    "test_api.py::test_labeling_workflow_blind_and_kappa"
+   ],
+   "manual": null
+  },
+  {
+   "id": "FR-EVL-02",
+   "tests": [
+    "test_api.py::test_eval_summary_never_standalone_accuracy",
+    "test_phase1_remaining.py::test_wilson_interval",
+    "test_pipeline.py::test_cluster_metrics_show_transitive_damage"
+   ],
+   "manual": null
+  },
+  {
+   "id": "FR-EVL-03",
+   "tests": [
+    "test_pipeline.py::test_cost_optimum_and_pc_separate"
+   ],
+   "manual": null
+  },
+  {
+   "id": "FR-EVL-04",
+   "tests": [
+    "test_api.py::test_eval_summary_never_standalone_accuracy"
+   ],
+   "manual": null
+  },
+  {
+   "id": "FR-EVL-08",
+   "tests": [
+    "test_pipeline.py::test_reproducible_result_hash",
+    "test_pipeline.py::test_run_records_versions_and_timings"
+   ],
+   "manual": null
+  },
+  {
+   "id": "FR-GOV-01",
+   "tests": [
+    "test_api.py::test_purpose_registration_by_legal_role",
+    "test_pipeline.py::test_governance_blocks_personal_run_without_purpose"
+   ],
+   "manual": null
+  },
+  {
+   "id": "FR-GOV-02",
+   "tests": [
+    "test_phase1_remaining.py::test_pseudonymized_source_is_personal_data"
+   ],
+   "manual": null
+  },
+  {
+   "id": "FR-GOV-03",
+   "tests": [
+    "test_ingest_std.py::test_mynumber_header_and_key_rejected"
+   ],
+   "manual": null
+  },
+  {
+   "id": "FR-GOV-04",
+   "tests": [
+    "test_api.py::test_auth_required_and_bad_login",
+    "test_api.py::test_rbac_enforced_by_api",
+    "test_api.py::test_raw_masking_for_roles_without_view_raw",
+    "test_phase1_remaining.py::test_cli_useradd",
+    "test_pipeline.py::test_rbac_matrix"
+   ],
+   "manual": null
+  },
+  {
+   "id": "FR-GOV-05",
+   "tests": [
+    "test_api.py::test_audit_verify_api",
+    "test_pipeline.py::test_audit_chain_detects_tampering"
+   ],
+   "manual": null
+  },
+  {
+   "id": "FR-TSK-01",
+   "tests": [
+    "test_api.py::test_task_api_and_cycle",
+    "test_pipeline.py::test_dag_cycle_rejected_and_derived_status"
+   ],
+   "manual": null
+  },
+  {
+   "id": "FR-TSK-02",
+   "tests": [
+    "test_api.py::test_task_api_and_cycle",
+    "test_pipeline.py::test_dag_cycle_rejected_and_derived_status",
+    "test_pipeline.py::test_import_prd"
+   ],
+   "manual": null
+  },
+  {
+   "id": "FR-TSK-03",
+   "tests": [
+    "test_phase1_remaining.py::test_review_items_are_tasks_with_sla_and_reassign",
+    "test_pipeline.py::test_review_decision_becomes_constraint"
+   ],
+   "manual": null
+  },
+  {
+   "id": "FR-VIZ-01",
+   "tests": [],
+   "manual": "ブラウザで手動確認(評価画面: 閾値曲線、ペア/クラスタ切替、コスト比スライダー)。自動テストは無い"
+  },
+  {
+   "id": "FR-VIZ-02",
+   "tests": [],
+   "manual": "ブラウザで手動確認(評価画面: ルール別の候補ペア数と真の一致の拾得数、設定画面: 事前見積)。自動テストは無い"
+  },
+  {
+   "id": "FR-VIZ-03",
+   "tests": [],
+   "manual": "ブラウザで手動確認(エンティティ画面: 力学レイアウト、辺の強さ、下限未満の辺の破線)。閾値スライダーと橋渡し/最弱リンクの強調は未実装(Phase 2: FR-CLU-03)"
+  },
+  {
+   "id": "NFR-01",
+   "tests": [
+    "test_pipeline.py::test_run_records_versions_and_timings"
+   ],
+   "manual": null
+  },
+  {
+   "id": "NFR-02",
+   "tests": [
+    "test_pipeline.py::test_reproducible_result_hash"
+   ],
+   "manual": null
+  },
+  {
+   "id": "NFR-03",
+   "tests": [
+    "test_api.py::test_explain_endpoint",
+    "test_pipeline.py::test_explain_returns_field_contributions"
+   ],
+   "manual": null
+  },
+  {
+   "id": "NFR-04",
+   "tests": [
+    "test_api.py::test_host_and_origin_checks",
+    "test_api.py::test_security_headers_and_cookie",
+    "test_api.py::test_static_path_traversal_blocked",
+    "test_api.py::test_non_json_post_rejected",
+    "test_api.py::test_raw_masking_for_roles_without_view_raw",
+    "test_phase1_remaining.py::test_stdlib_only_and_no_outbound_network"
+   ],
+   "manual": null
+  },
+  {
+   "id": "NFR-05",
+   "tests": [
+    "test_pipeline.py::test_audit_chain_detects_tampering"
+   ],
+   "manual": null
+  },
+  {
+   "id": "NFR-06",
+   "tests": [
+    "test_phase1_remaining.py::test_stdlib_only_and_no_outbound_network"
+   ],
+   "manual": null
+  },
+  {
+   "id": "NFR-07",
+   "tests": [
+    "test_phase1_remaining.py::test_stdlib_only_and_no_outbound_network"
+   ],
+   "manual": null
+  },
+  {
+   "id": "NFR-08",
+   "tests": [
+    "test_phase1_remaining.py::test_structured_logs"
+   ],
+   "manual": null
+  },
+  {
+   "id": "NFR-11",
+   "tests": [],
+   "manual": "各図に出典・n・確度を表示(ダッシュボード・実行・評価・エンティティ画面)。ブラウザで手動確認。全図への適用は未検証"
+  },
+  {
+   "id": "NFR-12",
+   "tests": [],
+   "manual": "表と CSV(評価画面の閾値曲線)を併設。キーボード操作と色以外の符号化は部分的。大規模(1万ノード超)の集約は未実装"
+  }
+ ],
+ "note": "テストのdocstringの [FR-xxx-nn] タグから自動生成。要求を満たすかの最終判断はPRDの受入基準を参照。"
+}

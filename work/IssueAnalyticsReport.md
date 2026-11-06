@@ -219,9 +219,10 @@ Splink公式ドキュメントは、入力データを事前に標準化(小文�
 | 23 | Reltio 公式ドキュメント(Match, Merge and Survivorship / Ordered match rule execution) | ベンダー一次(自社機能の記述)。スニペット確認 |
 
 ## 9. 本調査の限界
-- 論文は要旨レベルの確認が中心で、本文の実験条件・数値の再検証はしていない。ただし古典的な部分(Accuracyの落とし穴、ブロッキング、Splinkの教師なしEM、推移閉包、日本語正規化、評価設計)は小規模PoCで、PLM・LLM・埋め込み・WDC Products・100万件規模は縮小版の実験で検証した(論文の公表値の再現ではない。PLM微調整はAbt-Buy/WDCで小予算では再現できなかった)。商用MDM製品の性能、Dittoの大規模企業データ、VLDB J. 2024のベンチマークは検証不能/未実施。詳細は [PoC-ResultAnalyticsReport.md](./PoC-ResultAnalyticsReport.md)。
+- 論文は要旨レベルの確認が中心で、本文の実験条件・数値の再検証はしていない。ただし古典的な部分(Accuracyの落とし穴、ブロッキング、Splinkの教師なしEM、推移閉包、日本語正規化、評価設計)は小規模PoCで、PLM(GPU微調整)・LLM(ローカル3モデル+サブエージェント経由のホスト型1モデル)・埋め込み・WDC Products(ラベル品質のAI再評価を含む)・100万件規模・フィルタリング(VLDB J. 2024の要旨の主張)・Dittoの3最適化のアブレーション(簡易再実装)は縮小版の実験で検証した(論文の厳密な再現ではない)。RoBERTa-baseの全量微調整は Abt-Buy 0.894 で論文のDitto 89.33 とほぼ同等。VLDB J.論文は本文を入手できず、Dittoの3最適化の個別寄与は簡易再実装では再現できなかった。商用MDM製品の性能、Dittoの大規模企業データ、人間アノテータによるWDC再評価は検証不能/未実施。詳細は [PoC-ResultAnalyticsReport.md](./PoC-ResultAnalyticsReport.md)。
 - 日本語LLM性能、日本語ER専用ベンチマークは未調査。
 - 法令は、PPC FAQと目次・章立ての確認が中心。条文・ガイドライン本文の逐条確認はしていない(特に番号法、利用目的の制限、共同利用の要件)。法的助言ではない。
 - 商用MDMは Informatica と Reltio の公式ドキュメントの一部のみ確認。Profisee、Stibo、Semarchy、Tamr、Gartner Magic Quadrant等は未調査。各製品の日本語対応、アンマージ機能、価格・導入工数は未検証。
 - 「なぜ解決できなかったか」の製品別の一次失敗事例は見つけられず、6C-2は公開研究と公式ドキュメントからの推定を含む。
 - 自社データでの実測がないため、手法・製品の優劣は結論づけていない。
+

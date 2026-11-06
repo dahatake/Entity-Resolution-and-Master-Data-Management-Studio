@@ -1,0 +1,59 @@
+Abt-Buy: |L|=1068 |R|=1035 matches=1028 all pairs=1105380
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 1997.76it/s]
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 2017.19it/s]
+Abt-Buy schema-agnostic done
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  66%|██████▌   | 131/199 [00:00<00:00, 1309.48it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 1732.92it/s]
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 3919.98it/s]
+Abt-Buy schema-aware done
+DBLP-ACM: |L|=2436 |R|=2245 matches=2215 all pairs=5468820
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 2073.27it/s]
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  65%|██████▌   | 130/199 [00:00<00:00, 1299.13it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 1886.84it/s]
+DBLP-ACM schema-agnostic done
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 2796.24it/s]
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 2208.71it/s]
+DBLP-ACM schema-aware done
+Amazon-Google: |L|=1288 |R|=2074 matches=1133 all pairs=2671312
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 2432.39it/s]
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  71%|███████   | 141/199 [00:00<00:00, 1407.43it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 1902.69it/s]
+Amazon-Google schema-agnostic done
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  58%|█████▊    | 116/199 [00:00<00:00, 1138.63it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 1716.50it/s]
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 2510.24it/s]
+Amazon-Google schema-aware done
+      dataset            view                   method       best_params  candidates     PC     PQ  join_sec PQ_range_at_PC>=0.9  n_configs_ok  n_configs
+      Abt-Buy schema-agnostic     eps-join tfidf-char3           eps=0.3        5511 0.9796 0.1827    0.3053       0.0169-0.1827             3          6
+      Abt-Buy schema-agnostic      eps-join tfidf-word           eps=0.2        9545 0.9494 0.1023    0.0906       0.0312-0.1023             2          6
+      Abt-Buy schema-agnostic       kNN-join bge-small               k=3        3204 0.9329 0.2993   34.9836       0.0193-0.2993             5          7
+      Abt-Buy schema-agnostic     kNN-join tfidf-char3               k=2        2136 0.9543 0.4593    0.3287       0.0193-0.4593             6          7
+      Abt-Buy schema-agnostic      kNN-join tfidf-word               k=3        3204 0.9018 0.2893    0.1063       0.0192-0.2893             5          7
+      Abt-Buy schema-agnostic token-blocking+purge+CBS purge<=100,CBS>=2       25847 0.9728 0.0387    0.1892       0.0020-0.0387             8         12
+      Abt-Buy    schema-aware     eps-join tfidf-char3           eps=0.4        3397 0.9611 0.2908    0.1451       0.0212-0.2908             4          6
+      Abt-Buy    schema-aware      eps-join tfidf-word           eps=0.2        9732 0.9553 0.1009    0.0438       0.0316-0.1009             2          6
+      Abt-Buy    schema-aware       kNN-join bge-small               k=3        3204 0.9358 0.3002    6.1036       0.0193-0.3002             5          7
+      Abt-Buy    schema-aware     kNN-join tfidf-char3               k=2        2136 0.9504 0.4574    0.1687       0.0193-0.4574             6          7
+      Abt-Buy    schema-aware      kNN-join tfidf-word               k=5        5340 0.9115 0.1755    0.0645       0.0191-0.1755             4          7
+      Abt-Buy    schema-aware token-blocking+purge+CBS purge<=inf,CBS>=3       12022 0.9212 0.0788    0.3048       0.0059-0.0788             7         12
+Amazon-Google schema-agnostic     eps-join tfidf-char3           eps=0.4        7585 0.9656 0.1442    0.2768       0.0064-0.1442             4          6
+Amazon-Google schema-agnostic      eps-join tfidf-word           eps=0.4        4645 0.9144 0.2230    0.0863       0.0131-0.2230             4          6
+Amazon-Google schema-agnostic       kNN-join bge-small               k=5        6440 0.9435 0.1660    8.0012       0.0175-0.1660             4          7
+Amazon-Google schema-agnostic     kNN-join tfidf-char3               k=3        3864 0.9047 0.2653    0.3195       0.0176-0.2653             5          7
+Amazon-Google schema-agnostic      kNN-join tfidf-word               k=5        6440 0.9435 0.1660    0.1293       0.0175-0.1660             4          7
+Amazon-Google schema-agnostic token-blocking+purge+CBS purge<=100,CBS>=2       10566 0.9232 0.0990    0.1300       0.0011-0.0990             9         12
+Amazon-Google    schema-aware     eps-join tfidf-char3           eps=0.5        3931 0.9100 0.2623    0.2075       0.0076-0.2623             5          6
+Amazon-Google    schema-aware      eps-join tfidf-word           eps=0.4        5102 0.9320 0.2070    0.0468       0.0133-0.2070             4          6
+Amazon-Google    schema-aware       kNN-join bge-small               k=5        6440 0.9426 0.1658    7.3616       0.0176-0.1658             4          7
+Amazon-Google    schema-aware     kNN-join tfidf-char3               k=5        6440 0.9462 0.1665    0.2429       0.0176-0.1665             4          7
+Amazon-Google    schema-aware      kNN-join tfidf-word               k=5        6440 0.9479 0.1668    0.0779       0.0175-0.1668             4          7
+Amazon-Google    schema-aware token-blocking+purge+CBS  purge<=30,CBS>=1       17407 0.9365 0.0610    0.0984       0.0032-0.0610             6         12
+     DBLP-ACM schema-agnostic     eps-join tfidf-char3           eps=0.6        2780 0.9892 0.7881    0.9480       0.0027-0.7881             6          6
+     DBLP-ACM schema-agnostic      eps-join tfidf-word           eps=0.6        2553 0.9783 0.8488    0.3161       0.0282-0.8488             6          6
+     DBLP-ACM schema-agnostic       kNN-join bge-small               k=1        2436 0.9856 0.8961   14.5144       0.0182-0.8961             7          7
+     DBLP-ACM schema-agnostic     kNN-join tfidf-char3               k=1        2436 0.9842 0.8949    1.0463       0.0182-0.8949             7          7
+     DBLP-ACM schema-agnostic      kNN-join tfidf-word               k=1        2436 0.9869 0.8974    0.9620       0.0182-0.8974             7          7
+     DBLP-ACM schema-agnostic token-blocking+purge+CBS  purge<=30,CBS>=3        4275 0.9354 0.4847    0.2207       0.0006-0.4847            12         12
+     DBLP-ACM    schema-aware     eps-join tfidf-char3           eps=0.6        3087 0.9955 0.7143    0.3793       0.0032-0.7143             6          6
+     DBLP-ACM    schema-aware      eps-join tfidf-word           eps=0.6        2813 0.9923 0.7814    0.1134       0.0105-0.7814             6          6
+     DBLP-ACM    schema-aware       kNN-join bge-small               k=1        2436 0.9801 0.8912    9.0333       0.0182-0.8912             7          7
+     DBLP-ACM    schema-aware     kNN-join tfidf-char3               k=1        2436 0.9806 0.8916    0.4625       0.0182-0.8916             7          7
+     DBLP-ACM    schema-aware      kNN-join tfidf-word               k=1        2436 0.9783 0.8896    0.2360       0.0182-0.8896             7          7
+     DBLP-ACM    schema-aware token-blocking+purge+CBS purge<=300,CBS>=3        5144 0.9526 0.4102    0.4785       0.0012-0.4102             9         12

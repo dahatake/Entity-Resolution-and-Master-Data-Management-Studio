@@ -15,7 +15,10 @@ from rapidfuzz import fuzz
 from common import RESULTS, pair_metrics
 
 sys.stdout.reconfigure(encoding="utf-8")
-rng = random.Random(20261105)
+import os
+SEED = int(os.environ.get("POC_SEED", "20261105"))
+SUF = "" if SEED == 20261105 else f"_seed{SEED}"
+rng = random.Random(SEED)
 
 STEMS = ["東京", "大阪", "日本", "山田", "高橋", "渡邊", "齋藤", "髙島", "吉田", "神﨑", "中村", "國分",
          "三菱", "旭", "富士", "北斗", "青葉", "大和", "桜", "明星", "太陽", "光洋", "共栄", "新生"]
@@ -138,7 +141,7 @@ def group_by_key(df, keyfn):
 
 
 df = build()
-df.to_csv(RESULTS / "poc03_synthetic_companies.csv", index=False, encoding="utf-8-sig")
+df.to_csv(RESULTS / f"poc03_synthetic_companies{SUF}.csv", index=False, encoding="utf-8-sig")
 truth = to_pairs([list(g["rec_id"]) for _, g in df.groupby("true_id")])
 # 同一true_idは同一システム内に複数持たない(各systemは1回): 同systemの重複はない
 
@@ -171,7 +174,7 @@ for th in (95, 85, 75):
     add(f"R3: R2+住所一致ブロック内 名称ファジー(ratio>={th})", fuzzy(df, th))
 
 res = pd.DataFrame(rows)
-res.to_csv(RESULTS / "poc03_japanese_normalization.csv", index=False, encoding="utf-8-sig")
+res.to_csv(RESULTS / f"poc03_japanese_normalization{SUF}.csv", index=False, encoding="utf-8-sig")
 print("records:", len(df), "true pairs:", len(truth))
 print(res.to_string(index=False, float_format=lambda x: f"{x:.4f}"))
 
@@ -185,13 +188,14 @@ for a, b in missed:
     key = "+".join(sorted(ks)) or "(揺れ記録なし:異体字未登録/その他)"
     cnt[key] = cnt.get(key, 0) + 1
 print("R2の取りこぼし要因:", json.dumps(cnt, ensure_ascii=False))
-(RESULTS / "poc03_r2_missed_causes.json").write_text(json.dumps(cnt, ensure_ascii=False, indent=2), encoding="utf-8")
+(RESULTS / f"poc03_r2_missed_causes{SUF}.json").write_text(json.dumps(cnt, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
 fp = sorted(r2 - truth)
 print("R2の誤統合ペア数:", len(fp))
 fp_rows = [{"a": df.loc[a, "name"], "a_true": int(df.loc[a, "true_id"]), "b": df.loc[b, "name"],
             "b_true": int(df.loc[b, "true_id"]), "addr": df.loc[a, "addr"]} for a, b in fp]
-pd.DataFrame(fp_rows).to_csv(RESULTS / "poc03_r2_false_merges.csv", index=False, encoding="utf-8-sig")
+pd.DataFrame(fp_rows).to_csv(RESULTS / f"poc03_r2_false_merges{SUF}.csv", index=False, encoding="utf-8-sig")
 for r in fp_rows[:5]:
     print(r)
+

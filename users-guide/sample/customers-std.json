@@ -1,0 +1,10 @@
+{
+ "label": "customers-v1",
+ "fields": [
+  {"name": "name", "ops": ["nfkc", "lower", "corp", "variant", "punct", "nospace"], "sources": {"*": ["name"]}},
+  {"name": "addr", "ops": ["addr"], "sources": {"*": ["addr"]}},
+  {"name": "town", "ops": ["addr", "addr_town"], "sources": {"*": ["addr"]}},
+  {"name": "num", "ops": ["addr", "addr_num"], "sources": {"*": ["addr"]}},
+  {"name": "tel", "ops": ["phone"], "sources": {"*": ["tel"]}}
+ ]
+}

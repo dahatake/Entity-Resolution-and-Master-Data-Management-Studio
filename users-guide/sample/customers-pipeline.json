@@ -1,0 +1,14 @@
+{
+ "blocking": {
+  "rules": [
+   {"name": "電話", "keys": [{"field": "tel"}]},
+   {"name": "町字", "keys": [{"field": "town"}]}
+  ],
+  "max_block": 500,
+  "max_candidates": 2000000,
+  "link_type": "all"
+ },
+ "thresholds": {"auto": 0.9, "review_low": 0.02},
+ "clusterer": "components",
+ "seed": 1
+}

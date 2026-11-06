@@ -1,0 +1,17 @@
+{
+ "dataset": "Beer",
+ "variant": "base",
+ "model": "distilbert-base-uncased",
+ "seed": 43,
+ "epochs": 30,
+ "max_len": 128,
+ "da_op": null,
+ "train_n": 268,
+ "test_n": 91,
+ "seconds": 35,
+ "valid_f1": 0.875,
+ "epoch": 5,
+ "test_precision": 0.7,
+ "test_recall": 1.0,
+ "test_f1": 0.8235294117647058
+}

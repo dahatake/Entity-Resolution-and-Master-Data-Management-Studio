@@ -1,0 +1,23 @@
+{
+  "dataset": "Amazon-Google",
+  "model": "roberta-base",
+  "train_n": 6874,
+  "epochs": 15,
+  "seed": 42,
+  "tfidf_char_cosine": {
+    "threshold": 0.73,
+    "precision": 0.5515695067264574,
+    "recall": 0.5256410256410257,
+    "f1": 0.5382932166301969
+  },
+  "plm_finetuned": {
+    "f1": 0.73767258382643,
+    "epoch": 3,
+    "test_precision": 0.6877470355731226,
+    "test_recall": 0.7435897435897436,
+    "test_f1": 0.7145790554414785
+  },
+  "extra_tests": {},
+  "train_seconds": 563,
+  "device": "cuda"
+}

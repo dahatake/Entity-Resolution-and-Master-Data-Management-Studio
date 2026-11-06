@@ -1,0 +1,172 @@
+### id=0 orig_label=1 hosted=0 conf=2 cc=20 unseen=050 hardneg=False
+A: brand:  | title: Mens Citizen Eco-drive Gents Sports Strap Stainless Steel Watch AW1150-07A | description: Citizen AW1150-07A is an amazing and special Gents watch. Case is made out of Stainless Steel and the White dial gives the watch that unique look. 100 metres water resistancy will protect the watch and allows it to get submerged in the water for ever | price: 149.00 GBP
+B: brand:  | title: Citizen AW1150-07A Eco-Drive Rubber Strap AR Watch | description: FEATURESBANDPolyurethane, Strap, BuckleDIALSilver-Tone, Luminous Hands and MarkersCASE SIZE (MM)45CASE MATERIALTwo-Tone, Stainless Steel with ABS, Screw-Back CaseWATER-RESISTANCEWR100/10Bar/333ft [Swimming, Showering & Snorkeling]CRYSTALMineral Cryst | price: 225.0 USD
+
+### id=1 orig_label=1 hosted=0 conf=1 cc=50 unseen=000 hardneg=False
+A: brand: Netgear | title: Netgear GS108Ev3 – ProSAFE Plus 8-Port Gigabit Switch | description: NETGEAR ProSafe Plus GS108Ev3 - Switch - 8 x 10/100/1000 - desktop, wandbevestiging | price: €44,39 EUR
+B: brand: Netgear | title: Netgear GS108E Gigabit Ethernet (10/100/1000) Noir | description: Netgear GS108E, Gigabit Ethernet (10/100/1000), Full duplex, Certifié Energy Star | price: 70.24 EUR
+
+### id=31 orig_label=0 hosted=1 conf=3 cc=20 unseen=050 hardneg=True
+A: brand:  | title: Smartphone Samsung Galaxy A51 4GB 128GB Branco | description:  | price: 276.62 EUR
+B: brand:  | title: Smartfon Samsung Galaxy A51 czarny, 6.5", Super AMOLED, 1080 x 2400, Exynos, 9611, Internal RAM 4GB, 128GB, microSD, Dual SIM | description:  | price: 1529.00 PLN
+
+### id=37 orig_label=1 hosted=0 conf=3 cc=50 unseen=100 hardneg=False
+A: brand: CANON | title: Canon EOS RP Mirrorless Digital Camera with 24-240mm Lens | description: 26.2MP Full-Frame CMOS SensorDIGIC 8 Image ProcessorUHD 4K and Full HD 1080 Video2.36m-Dot OLED Electronic Viewfinder3″ 1.04m-Dot Vari-Angle Touchscreen LCDDual Pixel CMOS AF, 4779 AF PointsISO 100-40000, Up to 5 fps ShootingWi-Fi and Bluetooth Conne | price: 0.0 USD
+B: brand: Shimano | title: Shimano Di2 EW-SD50 E-Tube Wire (500mm) | description: This is a Shimano Ultegra Di2 EW-SD50 Extension Wire for all Di2 systems except Shimano 7970 Dura Ace.All e-tube wires may be used for internal or external applicationsFrame grommets for E-tube internal-wiring compatible frames are sold separatelyUlt | price: 25.99 USD
+
+### id=49 orig_label=1 hosted=0 conf=3 cc=50 unseen=100 hardneg=False
+A: brand: Audio Technica | title: Audio Technica AT-VMN95SP Replacement Stylus | description: Audio-Technica AT-VMN95SP Replacement Stylus is an 3mil conical stylus with aluminium cantilever. Used with an SP cartridge, the stylus can really improve the clarity of 78rpm records.Designed for use with all of the cartridge bodies VM95 series with | price: 4.97E1 GBP
+B: brand: Audio Technica | title: Audio Technica AT-VM95SP 78 MM Phono Cartridge | description: Audio Technica AT-VM95SP features an SP stylus for mono SP records. Used with a dedicated archiving phono preamplifier equalizer incorporating various functions to generate a mono signal from Stereo inputs (Mono L+R/L/R, LR Variable Mix) allows profe | price: 67 GBP
+
+### id=52 orig_label=1 hosted=0 conf=3 cc=80 unseen=050 hardneg=False
+A: brand: Dutch Doobadoo | title: Dutch Doobadoo Dutch Box Art Merci 16,3 x 21,8 cm | description: Dutch Box Art Merci 16,3 x 21,8 cmConsumentenadviesprijs: € 4,95 | price: 2.25 EUR
+B: brand:  | title: Dutch Doobadoo Dutch Box Art stencil Merci A4 | description:  | price: 4.95 EUR
+
+### id=65 orig_label=1 hosted=0 conf=2 cc=80 unseen=050 hardneg=False
+A: brand:  | title: D´Addario EXL115BT Balanced Nickel Wound Electric Strings 11-50. | description: D´Addario EXL115BT Balanced Nickel Wound Electric Strings 11-50. Balanced Tension electric guitar sets are designed using scientific formulas to create an equal feel between all strings. This allows for each string to be played equally with the same  | price: 6.9 EUR
+B: brand:  | title: D'Addario XL Nickel Wound Balanced Tension Electric Guitar Strings | description: D'Addario XL Nickel Wound Balanced Tension Electric Guitar StringsD'Addario XL Nickel Wound Balanced Tension Electric Guitar Strings are comprised of mathematically optimized string gauge combinations, resulting in greater control and playing comfort | price: 5.49 USD
+
+### id=67 orig_label=1 hosted=0 conf=3 cc=80 unseen=000 hardneg=False
+A: brand:  | title: MB ASUS PRIME X570-PRO AM4 4DDR4 HDMI,DP 3*PCIE Optical S/PDIF OUT, AURA, M.2 ATX | description:  | price: 277.31 EUR
+B: brand:  | title: ASUS Prime X570-P, Socket-AM4 | description: Moderkort, ATX, X570, DDR4, 2x PCIe 4.0 x16, 2x M.2, USB 3.2 | price: 2099.00 SEK
+
+### id=68 orig_label=0 hosted=1 conf=2 cc=80 unseen=000 hardneg=True
+A: brand: APC | title: APC Smart-UPS 1000 LCD | description:  | price: 6645 SEK
+B: brand:  | title: APC SMART UPS (SMT), 1000VA, 230V, LCD, RM 2U WITH SMART CONNECT - 3YR WTY | description: Intelligent and efficient network power protection from entry level to scaleable runtime. Ideal UPS for servers, point-of-sale, routers, switches, hubs and other ... | price: 999.35 AUD
+
+### id=108 orig_label=1 hosted=0 conf=2 cc=80 unseen=050 hardneg=False
+A: brand:  | title: APC Smart UPS SMT1000RMI2U 1000VA Line Interactive | description: Power protection productsUPSAPCoffers a high level of protection for computers and electronics. | price: 720 EUR
+B: brand:  | title: APC - SMART-UPS 1000VA LCD RM 2U 230V WITH SMARTCONNECT IN | description: APC SMART-UPS 1000VA LCD RM 2U 230V WITH SMARTCONNECT IN (SMT1000RMI2UC) - Kapacitet: 1kVA - Produkt: Rackmonterad UPS | price: 8417.50 SEK
+
+### id=117 orig_label=1 hosted=0 conf=3 cc=20 unseen=100 hardneg=False
+A: brand: Epson | title: Epson C33S020638 Toner Cartridge - Yellow, OEM (C33S020638) | description: The Epson Toner Cartridge, OEM Epson C33S020638 is manufactured to the highest quality and level of precision. The Epson C33S020638 is ideal for providing the best print quality.➯New OEM M #C33S020638 ➯Yellow, Toner Cartridge ➯n/a Page Yield Compatib | price: 172.21 USD
+B: brand: Epson | title: Epson TM-C7500G Yellow Ink Cartridge SJIC30P | description: Please note that the ColorWorks C7500G Yellow Ink Cartridge SJIC30P is only compatible with Epson TM-C7500G Color Label Printers. | price: 165.00 USD
+
+### id=135 orig_label=1 hosted=0 conf=1 cc=50 unseen=100 hardneg=False
+A: brand:  | title: Premium Compatible Okidata 56123402 Black Toner Cartridge | description: Product SpecificationConditionOEM Equivalent with new & recycled components.WarrantyOne Year WarrantyPage Yield5500Color(s)BlackReplaces the Following Manufacturer Numbers:5612340256123401Compatible with the Following Printer Models:MB260MFPMB280MFPM | price: 5.163E1 USD
+B: brand: Okidata | title: Okidata 56123402 Toner Cartridge - Black, OEM (56123402) | description: The Okidata 56123402 Toner Cartridge Black, OEM Okidata 56123402 is manufactured to the highest quality and level of precision. The Okidata 56123402 is ideal for providing the best print quality.SpecificationsManufacturer Part Number: 56123402 Manufa | price: 187.21 USD
+
+### id=154 orig_label=0 hosted=1 conf=2 cc=50 unseen=050 hardneg=True
+A: brand: Continental | title: Continental Continental Grand Prix 5000 700 x 25 Clincher 330tpi | description: Get the grip, rolling resistance and increased puncture protection you need to ride faster and more comfortably with the all-rounder Continental Grand Prix 5000 tire. | price: 79.95 USD
+B: brand: Continental | title: Continental Grand Prix 5000 700C Folding Clincher Road Tyre | description: About the Continental Grand Prix 5000 Continental's all-new road tyre, the Grand Prix 5000 takes over where the 4000 left off, taking its speedy performance and road running durability to new levels. Built from Continental's renowned, unique BlackChi | price: £59.95 GBP
+
+### id=158 orig_label=1 hosted=0 conf=3 cc=80 unseen=000 hardneg=False
+A: brand:  | title: Ubiquiti UniFi Protect Video Security | description: Ubiquiti's UniFi Protect offers all the flexibility one would need for their home security needs. Here's our full review. | price:  
+B: brand:  | title: Ubiquiti UniFi UCK-G2-PLUS Cloud Key Gen2 PLUS | description: Ubiquiti UniFi UCK-G2-PLUS Cloud Key Gen2 PLUS | price: 4.0512E2 NZD
+
+### id=169 orig_label=1 hosted=0 conf=2 cc=80 unseen=100 hardneg=False
+A: brand:  | title: Winchester AA Super Handicap 12 Gauge 2 3/4" 1Oz #7.5 Ammunition AAHLA127 | description: Winchester AA Super Handicap 12 Gauge 2 3/4" 1Oz #7.5 Ammunition AAHLA127. For more than 35 years, AA Target Loads have reigned as the standard of excellence and overwhelming choice of serious target shooters the world over. The improved AA's will ca | price: 12.09 USD
+B: brand:  | title: 25 Rounds of 1 ounce #7 1/2 shot 12ga Ammo by Winchester AA Lite Handicap | description: This 12 gauge ammunition from Winchester's AA series uses a low-recoiling load for more comfortable handling at the range or in the field. Each shell in this box of 25 fires a one ounce load of #7.5 shot at a muzzle velocity of 1,290 feet per second. | price: 10.25 USD
+
+### id=183 orig_label=1 hosted=0 conf=2 cc=80 unseen=050 hardneg=False
+A: brand:  | title: Ernie Ball 2250 Power Slinky Classic Rock N Roll Electric Guitar Strings 11-48 | description: Ernie Ball Slinky Classic Rock N Roll Pure Nickel wrap electric guitar strings are made from pure nickel wire wrapped around tin plated hex shaped steel core wire, these guitar strings produce a warm rich tone with that signature Slinky feel. Gauges  | price: 4.99E0 USD
+B: brand:  | title: Ernie Ball Power Slinky Classic RNR Pure Nickel Electric (11-48) 3 Pack | description: Ernie Ball Power Slinky Classic RNR Pure Nickel Electric (11-48) 3 Pack | price: 15.99 USD
+
+### id=188 orig_label=1 hosted=0 conf=1 cc=80 unseen=100 hardneg=False
+A: brand:  | title: Manfrotto MK290LTA3-V Tripod Kit Video 290 Light | description:  | price: 293.81 AUD
+B: brand:  | title: 290 LIGHT ALU BEFREE LIVE FLUID VIDEO HE | description: Manfrotto 290 light aluminium tripod with befree live fluid video headProduct DescriptionThis version of 290 light is a tripod with head for vlogger and mobile journalist that features the new Befree live fluid video head. This video tripod kit combi | price: 4.190002E2 NZD
+
+### id=195 orig_label=1 hosted=0 conf=2 cc=80 unseen=050 hardneg=False
+A: brand:  | title: 25 Rounds of 12ga 2-3/4\" Ammo by Winchester AA Lite Handicap - 1 ounce #7 1/2 shot | description: This 12 Gauge shotshell from Winchester’s AA line of shotgun ammunition offers a lot of features to make it valuable while competing at trap, skeet, and sporting clays. Its durable plastic hull gives reliable performance and is suitable for reloading | price: 10.5 USD
+B: brand:  | title: Winchester AA Super Handicap 12 Gauge 2 3/4" 1Oz #7.5 Ammunition AAHLA127 | description: Winchester AA Super Handicap 12 Gauge 2 3/4" 1Oz #7.5 Ammunition AAHLA127. For more than 35 years, AA Target Loads have reigned as the standard of excellence and overwhelming choice of serious target shooters the world over. The improved AA's will ca | price: 12.09 USD
+
+### id=201 orig_label=1 hosted=0 conf=1 cc=20 unseen=000 hardneg=False
+A: brand: Epson | title: Compatible Epson T1814 (#18XL) Yellow High Capacity Ink Cartridge (T1814XLYCOM) | description:  | price: 4.99 GBP
+B: brand: Epson | title: Epson Daisy 18XL Series T1814 Yellow Ink Cartridge (Yield 450 Pages) RS Blister for Expression Home XP-102 Inkjet Printer EP18144 | description: Epson Daisy 18XL Series T1814 Yellow Ink Cartridge (Yield 450 Pages) RS Blister for Expression Home XP-102 Inkjet Printer EP18144 | price: 14.64 GBP
+
+### id=220 orig_label=0 hosted=1 conf=2 cc=50 unseen=000 hardneg=True
+A: brand:  | title: TP LINK JetStream 8-Port Gigabit Smart PoE+ Switch | description: TP LINK JetStream 8-Port Gigabit Smart PoE+ Switch | price: 139.12 GBP
+B: brand: TP-LINK | title: Tp-Link TL-SG2008 Jetstream 8 Port Gigabit Smart Rackmount Swtch | description: JetStream 8-Port Gigabit Smart SwitchTL-SG2008Gigabit Ethernet connections on all ports provide full speed of data transferringIntegrated security strategy including 802.1Q VLAN, ACL, Port Security and Storm control help protect LAN area investmentL2 | price:  
+
+### id=260 orig_label=1 hosted=0 conf=3 cc=80 unseen=000 hardneg=False
+A: brand: WTB | title: WTB WTB Byway Tire - 650b x 47, TCS Tubeless, Folding, Black | description: The Byway Road Plus tire allows riders to find comfort on remote gravel roads without being slowed down on the pavement required to reach them. | price: 64.99 USD
+B: brand:  | title: Maxxis Tire High Roller II EXO/TR Foldable 29x2.30 | description: An open and aggressive tread design gives the High Roller II excellent soil penetration and mud-clearing ability. A square profile provides a solid, consistent feel across the knobs. Modified knobs on the shoulder and center improve braking performan | price:  
+
+### id=269 orig_label=1 hosted=0 conf=3 cc=80 unseen=000 hardneg=False
+A: brand:  | title: TAG Heuer Calibre 16 – Automatic Chronograph | description: Calibre 16 – Automatic Chronograph | price: 4.15E3 USD
+B: brand:  | title: Copy TAG Heuer Carrera Automatic Blue Dial Men's CBK2112.BA0715 | description: Buy Copy TAG Heuer Carrera Automatic Blue Dial Men's CBK2112.BA0715 OnlineBasic InfoListing number 79H0C7Reference number CBK2112-BA0715Brand TAG HeuerModel CarreraCode cbk2112-ba0715-tag-heuer-carreraMovement AutomaticCase material SteelBracelet mat | price: 127.8 USD
+
+### id=274 orig_label=1 hosted=0 conf=1 cc=80 unseen=100 hardneg=False
+A: brand:  | title: 5.0 cu. ft. Smart Single Wall Oven with True Convection Cooking | description:  | price: -1.0 USD
+B: brand:  | title: 30\" Single Wall Oven with True Convection and Frozen Bake Technology - Stainless Steel | description: …app, add your appliance and follow the guided experience to get up and running quickly. Approximate Dimensions (Inches) Height: 28 3/4 Width: 30 Depth: 26 7/16 Model Number: wos72ec0hs WOS72EC0HS Whirlpool 30\" Single Wall Oven with True Convection  | price: 1799.00 USD
+
+### id=283 orig_label=1 hosted=0 conf=1 cc=20 unseen=100 hardneg=False
+A: brand:  | title: TAG Heuer Formula 1 Chronograph Quartz Black Dial Men's CAZ101 | description: We serve hundreds of thousand customers yearly. We provide guaranteed free delivery and world-class customer support service. Strict Quality control and timely manner delivery is our utmost policy. At Cloudwatches replica watches shop, each order is  | price: 152 USD
+B: brand:  | title: TAG Heuer Formula 1 Indy 500 Limited Edition Watch 43mm Mens Watch CAZ101V.BA0842 | description:  | price: 1400.0 GBP
+
+### id=313 orig_label=1 hosted=0 conf=2 cc=20 unseen=050 hardneg=False
+A: brand:  | title: Colorful Headset Hi-Fi Earbuds Bass Earpieces Earphone | description: Specification:Impedance: 32Ω ± 15%Sensitivity: 115 dB ± 3dBDriver Size:10mmFrequency Range: 20Hz-20000HzPlug-Type: 3.5MM Gold-platedCable Length:1.20mCable Feather: Wound Built-inResistance to pull classic fashion appearanceFunction: With Microphone  | price:  
+B: brand: aylamart.com | title: Langsdom Mijiaer JM21 In ear Earphones For Phone iPhone Huawei Xiaomi Headsets Wired Earphone Earbuds Earpiece fone de ouvido | description: NotificationDear friends,We are writing to inform you that we have two brands(Langsdom & Mijiaer) of this model, actually they are the same earphones, the differs just the brand logo, we guarantee that they are 100% original brand new.Since we have N | price:  
+
+### id=348 orig_label=1 hosted=0 conf=3 cc=80 unseen=100 hardneg=False
+A: brand: Garmin | title: Garmin STRIKER 4 Fishfinder Worldwide Version w/77/200kHz - 4-Pin Transducer w/Transom & Trolling Motor Mounts | description: Condition: New | price: 119.99 USD
+B: brand: Garmin | title: Garmin 010-01872-00 Striker Plus 5Cv with Cv20-TM transducer, 5 inches | description: The STRIKER Plus 5cv fishfinder with a bright 5” display and built-in GPS features Garmin CHIRP traditional sonar, Garmin CHIRP ClearVü scanning sonar and Quickdraw Contours map drawing software, which stores up to 2 million acres of content with 1’  | price: 299.99 USD
+
+### id=351 orig_label=1 hosted=0 conf=3 cc=50 unseen=000 hardneg=False
+A: brand:  | title: CISCO SYSTEMS - CISCO GBIC SFP-10G-SR-S= 10G/LC SR/SFP+ SFP-10G-SR-S= | description: CISCO GBIC SFP-10G-SR-S= 10G/LC SR/SFP+ | price: 3.4083E2 EUR
+B: brand:  | title: Refurb - Juniper Networks SFP+-10G-SR | description: Juniper 10GB SFP+ | price: 50 USD
+
+### id=361 orig_label=1 hosted=0 conf=3 cc=20 unseen=100 hardneg=False
+A: brand:  | title: router inalambrico n gigabit (tl-wr1043nd) | description:  | price: 40609 CLP
+B: brand: TP-Link | title: N 300Mbps TP-LINK TL-WR841N Wireless Router (QHAB840RW0) | description: TP LINK TL-WR841N | price: 13.741.67 HUF
+
+### id=364 orig_label=1 hosted=0 conf=2 cc=20 unseen=100 hardneg=False
+A: brand:  | title: 55 IN FLAT LED 4K TV | description:  | price: 699.99 USD
+B: brand:  | title: 55" Class TU7000 Crystal UHD 4K Smart TV (2020) | description:  | price: 438.96 USD
+
+### id=380 orig_label=1 hosted=0 conf=2 cc=50 unseen=050 hardneg=False
+A: brand:  | title: Ernie Ball 2250 Power Slinky Classic Rock N Roll Electric Guitar Strings 11-48 | description: Ernie Ball Slinky Classic Rock N Roll Pure Nickel wrap electric guitar strings are made from pure nickel wire wrapped around tin plated hex shaped steel core wire, these guitar strings produce a warm rich tone with that signature Slinky feel. Gauges  | price: 4.99E0 USD
+B: brand:  | title: Ernie Ball Power Slinky Classic RNR Pure Nickel Electric (11-48) 3 Pack | description: Ernie Ball Power Slinky Classic RNR Pure Nickel Electric (11-48) 3 Pack | price: 15.99 USD
+
+### id=385 orig_label=1 hosted=0 conf=1 cc=50 unseen=000 hardneg=False
+A: brand: SanDisk | title: SanDisk Extreme Pro CFAST 2.0 VPG130 - 64GB | description: For those working in high-performance industries such as broadcasting, cinema, and photography, the 64GB Extreme PRO CFast 2.0 Memory Card from SanDisk combines the speed, capacity, and performance needed to record uninterrupted DCI 4K video, which h | price: 310.00 SGD
+B: brand:  | title: Card SanDisk Extreme PRO CFast 2.0 | description: Capacitate64GB128GB256GBFormatCFast 2.0CFast 2.0CFast 2.0Viteza citire525 MB/s525 MB/s525 MB/sViteza scriere430 MB/s450 MB/s450 MB/sClasa de viteza videoU3U3U3Dimensiuni43 x 36 x 3.3 mm43 x 36 x 3.3 mm43 x 36 x 3.3 mm | price: 8,086.00 USD
+
+### id=391 orig_label=1 hosted=0 conf=3 cc=50 unseen=100 hardneg=False
+A: brand:  | title: Citizen Men's Eco-Drive World Timer leather Stainless Steel Watch AW1598-70X | description: Citizen Men's Eco-Drive World Timer leather Stainless Steel Watch AW1598-70XImportedKnow the time no matter where you are wearing the highly sophisticated Citizen Watches Eco-Drive watch.Round silver-tone stainless steel case.Chestnut brown croc-embo | price: 224.25 USD
+B: brand: Citizen | title: Citizen Corso World Time Perpetual Calendar | description: Redefining a classic timepiece with a hint of style, the Citizen World Time Perpetual Calendar brings about a new confidence. A timepiece that's powered by any light with Eco-Drive technology, Featuring world time in 26 time zones, perpetual calendar | price: 320.0 EUR
+
+### id=438 orig_label=1 hosted=0 conf=2 cc=80 unseen=100 hardneg=False
+A: brand:  | title: CLASSIC 10' CABLE WITH RIGHT ANGLE WHITE | description: Ernie Ball instrument cables feature a high-quality design made with superior components that are built to last. Dual-conductors deliver reliably clear tone with crisp highs, tight mids, and rich harmonics. Multiple shielding materials preserve the s | price: 4.395E1 AUD
+B: brand:  | title: Ernie Ball Standard Instrument Cable - 10' Straight/Straight | description: Ernie Ball Standard Instrument Cable - 10' Straight/Straight | price: 19.99 USD
+
+### id=459 orig_label=1 hosted=0 conf=2 cc=50 unseen=100 hardneg=False
+A: brand:  | title: RAY BAN RB2168 901/31 | description:  | price:  
+B: brand: Ray-Ban | title: Ray-BanSUNGLASSES 0RB2168 954/3350 | description:  | price: 225.00 CAD
+
+### id=510 orig_label=1 hosted=0 conf=1 cc=50 unseen=050 hardneg=False
+A: brand:  | title: Samsung S24F350FHU - SF350 Series - LED-skärm - 24\" - 1920 x 1080 Full HD (1080p) | description:  | price: 1613.00 SEK
+B: brand:  | title: Samsung S24F350H 24in Full HD LED Monitor | description: Samsung SF350 monitor with ultra-slim profile and the simple circular stand elegantly complements the super slim display. | price: 239.660 EUR
+
+### id=514 orig_label=1 hosted=0 conf=3 cc=20 unseen=000 hardneg=False
+A: brand:  | title: SFP-10G-SR Cisco SFP Transceiver Module (New) | description: Condition: NEWAvailability: Stock AvailableCisco 10GBase-SR SFP+ Transceiver - 1 x 10GBase-SR (SFP-10G-SR)The Cisco 10GBASE SFP+ modules offer customers a wide variety of 10 Gigabit Ethernet connectivity options for data center, enterprise wiring clo | price: 3.26E2 USD
+B: brand: TNP | title: 10Gb SFP+ MM 850nm Transceiver | description:  | price: 35.99 GBP
+
+### id=530 orig_label=1 hosted=0 conf=3 cc=80 unseen=050 hardneg=False
+A: brand:  | title: Lezyne Alloy Floor Drive Floor Pump ABS-1 Pro Valve | description: A professional grade floor pumpDurable CNC machined aluminum barrel and base with steel pistonVarnished wood handle with aluminum junctionOversized 3.5 inch precision gauge. Extra long, high-strength hose with aluminum couplersTough anodized high-pol | price: 9.9E1 SGD
+B: brand: Lezyne | title: Lezyne vertical air pump CNC Digital Drive silver-glossy | description: The ultimate, professional digital standpump. This gives you the perfect tire pressure for every condition.The ultimate free-air pump with digital display, as used by the professionals. Full CNC machined aluminum construction. Extremely accurate digi | price: 100.00 EUR
+
+### id=538 orig_label=1 hosted=0 conf=2 cc=80 unseen=000 hardneg=False
+A: brand: RAM Mounts | title: RAP-B-224-1U - RAM Composite 3.3\" Diameter Suction Cup Base with 1\" Ball | description:  | price:  
+B: brand:  | title: Ram Mount 2.75 Suction Cup Base with 1 Ball | description: Ram Mount 2.75 Suction Cup Base with 1 Ball2.75" diameter suction cup base with 1" ball. Perfect for lightweight mobile electronics such as mobile phones, sat navs and GPS systems. Compatible with any of the RAM 1" mounts and double socket arms.Detai | price: 1.899E1 GBP
+
+### id=542 orig_label=1 hosted=0 conf=1 cc=80 unseen=050 hardneg=False
+A: brand:  | title: TISSOT T-RACE CYCLING T111.417.37.441.04 (T111.417.37.441.04) | description:  | price: 485.00 EUR
+B: brand:  | title: Tissot T-Race Chronograph Cycling Chronograph | description: The Tissot T-Race Cycling celebrates our passion for cycling and is a must-have for all cycling fans! This sporty watch features many details inspired by racing bikes with a fitting aerodynamic and ergonomic design. The large hands make time precise  | price: 6.75E2 CAD
+
+### id=564 orig_label=1 hosted=0 conf=2 cc=50 unseen=050 hardneg=False
+A: brand: Jabra | title: Jabra Evolve 20 MS mono - Headset - on-ear - wired - USB | description:  | price:  
+B: brand: Jabra | title: Jabra Evolve 20 UC cuffia mono per Skype for Business | description:  | price: € 28,00 EUR
+
+### id=569 orig_label=1 hosted=0 conf=2 cc=50 unseen=050 hardneg=False
+A: brand:  | title: Everyday Backpack 30L v2 - Midnight | description: FEATURESVERSATILEFeaturing a clean silhouette with minimal dangling straps, the all-new Everyday Backpack brilliantly adapts to your ever-changing gear, lifestyle, and environment.WHAT'S NEW FOR V2Aesthetic improvements via cleaner seams and more rou | price: 2,599.00 HKD
+B: brand:  | title: Peak Design Everyday Backpack v2 (20L, Midnight) | description: Versatile, Size-Adjustable Backpack Adjustable Height from 18.3\" to 22.3\" Top Flap with Magnetic Latch System Dual Side-Access Panels | price: 449.00 AUD
+
+### id=571 orig_label=0 hosted=1 conf=3 cc=80 unseen=050 hardneg=True
+A: brand:  | title: Verižnik SH Dura Ace CS-9100 11P 11-25 | description: Shimano Dura Ace CS-R9100 Cassette 11-speed Gears to match your riding style as well as your chosen terrain with Shimano's new rider-tuned cassette sprockets. The new lightweight titanium 11-speed cassettes are available in various sprocket combinati | price: 188.76 EUR
+B: brand: Shimano | title: Shimano Dura-Ace CS-R9100 Cassette 11 vitesses | description:  | price: 187.99 EUR
+
+### id=575 orig_label=1 hosted=0 conf=1 cc=20 unseen=000 hardneg=False
+A: brand: RAM | title: RAM Triple 25mm Ball Connector (RAM-B-289U) | description: Triple adapter 25mm Balls, to suit any RAM-B-201, 201C, 201A, or any RAM-B components. | price: 66.00 AUD
+B: brand:  | title: RAM Triple 1\" Ball Base | description: SpecificationsMaterial: Powder Coated Marine Grade AluminiumColour: Black Powder CoatBall: 1 Inch Rubber BallAccessoriesCompatibilityRelated ItemsNotesInstructionsVideos Warranty RAM Warranty | price: 7.095E1 AUD
+

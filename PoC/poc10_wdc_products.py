@@ -66,7 +66,7 @@ def feats(rows):
             pa, pb = float(r["price_left"]), float(r["price_right"]); pr = min(pa, pb) / max(pa, pb) if max(pa, pb) > 0 else 0
         except Exception:
             pr = -1
-        F.append([cos[i], jac, numj, len(na & nb), len(na ^ nb), pr, int(r["brand_left"] == r["brand_right"] != "None")])
+        F.append([cos[i], jac, numj, len(na & nb), len(na ^ nb), pr, int(r["brand_left"] not in (None, "None") and r["brand_left"] == r["brand_right"])])
     return np.array(F)
 
 
@@ -96,4 +96,5 @@ def dump(rows, fn):
 dump(train, "train.txt"); dump(valid, "valid.txt")
 dump(tests["000"], "test.txt"); dump(tests["050"], "test_un050.txt"); dump(tests["100"], "test_un100.txt")
 (RESULTS / "poc10_wdc.json").write_text(json.dumps(out, indent=2, ensure_ascii=False), encoding="utf-8")
+
 

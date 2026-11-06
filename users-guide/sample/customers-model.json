@@ -1,0 +1,9 @@
+{
+ "matcher": "fs",
+ "fields": [
+  {"name": "name", "cmp": "text"},
+  {"name": "town", "cmp": "text"},
+  {"name": "num", "cmp": "exact"},
+  {"name": "tel", "cmp": "exact"}
+ ]
+}

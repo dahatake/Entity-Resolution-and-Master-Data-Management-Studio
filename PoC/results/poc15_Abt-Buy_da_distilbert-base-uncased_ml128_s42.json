@@ -1,0 +1,17 @@
+{
+ "dataset": "Abt-Buy",
+ "variant": "da",
+ "model": "distilbert-base-uncased",
+ "seed": 42,
+ "epochs": 15,
+ "max_len": 128,
+ "da_op": "span_shuffle",
+ "train_n": 5743,
+ "test_n": 1916,
+ "seconds": 255,
+ "valid_f1": 0.8353808353808354,
+ "epoch": 11,
+ "test_precision": 0.777292576419214,
+ "test_recall": 0.8640776699029126,
+ "test_f1": 0.8183908045977012
+}

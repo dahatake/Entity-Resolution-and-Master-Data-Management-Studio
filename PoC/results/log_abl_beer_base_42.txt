@@ -1,0 +1,48 @@
+Loading weights:   0%|          | 0/100 [00:00<?, ?it/s]Loading weights: 100%|██████████| 100/100 [00:00<00:00, 2959.30it/s]
+[transformers] [1mDistilBertForSequenceClassification LOAD REPORT[0m from: distilbert-base-uncased
+Key                     | Status     | 
+------------------------+------------+-
+vocab_transform.weight  | UNEXPECTED | 
+vocab_transform.bias    | UNEXPECTED | 
+vocab_layer_norm.weight | UNEXPECTED | 
+vocab_projector.bias    | UNEXPECTED | 
+vocab_layer_norm.bias   | UNEXPECTED | 
+classifier.weight       | MISSING    | 
+pre_classifier.bias     | MISSING    | 
+classifier.bias         | MISSING    | 
+pre_classifier.weight   | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+epoch 0 valid F1 0.0000 t=3s
+epoch 1 valid F1 0.4545 t=4s
+epoch 2 valid F1 0.7200 t=6s
+epoch 3 valid F1 0.5600 t=7s
+epoch 4 valid F1 0.4762 t=8s
+epoch 5 valid F1 0.6667 t=9s
+epoch 6 valid F1 0.8667 t=10s
+epoch 7 valid F1 0.7000 t=11s
+epoch 8 valid F1 0.8750 t=13s
+epoch 9 valid F1 0.8966 t=14s
+epoch 10 valid F1 0.8000 t=15s
+epoch 11 valid F1 0.9333 t=16s
+epoch 12 valid F1 0.8148 t=17s
+epoch 13 valid F1 0.8750 t=18s
+epoch 14 valid F1 0.8750 t=19s
+epoch 15 valid F1 0.8750 t=21s
+epoch 16 valid F1 0.8750 t=22s
+epoch 17 valid F1 0.8750 t=23s
+epoch 18 valid F1 0.8750 t=24s
+epoch 19 valid F1 0.9333 t=25s
+epoch 20 valid F1 0.9333 t=26s
+epoch 21 valid F1 0.9333 t=27s
+epoch 22 valid F1 0.9333 t=28s
+epoch 23 valid F1 0.9333 t=29s
+epoch 24 valid F1 0.9333 t=30s
+epoch 25 valid F1 0.9333 t=31s
+epoch 26 valid F1 0.9333 t=32s
+epoch 27 valid F1 0.9333 t=33s
+epoch 28 valid F1 0.9333 t=35s
+epoch 29 valid F1 0.9333 t=36s
+{"dataset": "Beer", "variant": "base", "model": "distilbert-base-uncased", "seed": 42, "epochs": 30, "max_len": 128, "da_op": null, "train_n": 268, "test_n": 91, "seconds": 36, "valid_f1": 0.9333333333333333, "epoch": 11, "test_precision": 0.7222222222222222, "test_recall": 0.9285714285714286, "test_f1": 0.8125}

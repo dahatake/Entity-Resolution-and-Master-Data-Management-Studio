@@ -1,0 +1,23 @@
+{
+  "dataset": "Abt-Buy",
+  "model": "roberta-base",
+  "train_n": 5743,
+  "epochs": 15,
+  "seed": 42,
+  "tfidf_char_cosine": {
+    "threshold": 0.4799999999999999,
+    "precision": 0.6208333333333333,
+    "recall": 0.7233009708737864,
+    "f1": 0.6681614349775785
+  },
+  "plm_finetuned": {
+    "f1": 0.8866498740554156,
+    "epoch": 8,
+    "test_precision": 0.8894230769230769,
+    "test_recall": 0.8980582524271845,
+    "test_f1": 0.893719806763285
+  },
+  "extra_tests": {},
+  "train_seconds": 945,
+  "device": "cuda"
+}
